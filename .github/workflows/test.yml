@@ -1,0 +1,17 @@
+# .github/workflows/test.yml
+name: Local Action Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      # 👇 This line runs YOUR action.yml in the current repo
+      - uses: ./
+        with:
+          github_access_token: "test-token"
+          qontract_access_token: "test-token"

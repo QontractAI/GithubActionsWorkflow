@@ -1,0 +1,14 @@
+name: "i18n Copilot"
+description: "Automation for translating i18n json files"
+
+inputs:
+  github_access_token:
+    description: "The GitHub access token to use"
+    required: true
+  qontract_access_token:
+    description: "The Qontract access token to use"
+    required: true
+
+runs:
+  using: "node20"
+  main: "./index.js"
