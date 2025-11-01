@@ -58,7 +58,7 @@ jobs:
 
     steps:
       - name: Run i18n Copilot
-        uses: owner/repo@v1
+        uses: QontractAI/GithubActionsWorkflow@v1
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
           qontract_access_token: ${{ secrets.QONTRACT_ACCESS_TOKEN }}
