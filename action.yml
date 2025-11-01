@@ -1,6 +1,10 @@
 name: "i18n Copilot"
 description: "Automation for translating i18n json files"
 
+branding:
+  icon: 'book-open'
+  color: 'blue'
+
 inputs:
   github_access_token:
     description: "The GitHub access token to use"
